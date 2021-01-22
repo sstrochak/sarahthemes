@@ -2,7 +2,7 @@
 % Please edit documentation in R/geoms.R
 \name{geom_text}
 \alias{geom_text}
-\title{geom_point in the Urban Institute style}
+\title{geom_text in the Urban Institute style}
 \usage{
 geom_text(mapping = NULL, size = 1/0.352777778, ...)
 }
@@ -14,5 +14,5 @@ geom_text(mapping = NULL, size = 1/0.352777778, ...)
 \item{...}{other arguments passed to \code{geom_point()}}
 }
 \description{
-Submit \code{?ggplot2::geom_point} to see the full documentation for \code{geom_point()}
+Submit \code{?ggplot2::geom_text} to see the full documentation for \code{geom_text()}
 }

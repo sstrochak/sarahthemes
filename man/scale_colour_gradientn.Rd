@@ -6,10 +6,10 @@
 \usage{
 scale_colour_gradientn(
   ...,
-  colours = c("#CFE8F3", "#A2D4EC", "#73BFE2", "#46ABDB", "#1696D2", "#12719E",
-    "#0A4C6A", "#062635"),
-  colors = c("#CFE8F3", "#A2D4EC", "#73BFE2", "#46ABDB", "#1696D2", "#12719E",
-    "#0A4C6A", "#062635"),
+  colours = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+    "#7064bd", "#120947"),
+  colors = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+    "#7064bd", "#120947"),
   values = NULL,
   space = "Lab",
   na.value = "grey50",
