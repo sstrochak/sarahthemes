@@ -14,13 +14,29 @@ urbn_color_pal <- function(palette = "categorical") {
   }
 }
 
+#' The Urban Institute [ggplot2] theme
+#'
+#' Color palettes used in the Urban Institute.
+#'
+#' @export
+#' @param palette Palette name.
+sarah_color_pal <- function(palette = "categorical") {
+  palette_list <- palette_sarah
+
+  types <- palette_list[[palette]]
+
+  function(n) {
+    types[[n]]
+  }
+}
+
 #' Discrete color scale that aligns with the Urban Institute style
 #'
 #' @md
 #' @param ... other arguments passed to \code{discrete_scale()}
 #' @export
 scale_color_discrete <- function(...) {
-  ggplot2::discrete_scale("colour", "urbn", urbn_color_pal("categorical"), ...)
+  ggplot2::discrete_scale("colour", "urbn", sarah_color_pal("categorical"), ...)
 }
 
 #' Discrete color scale that aligns with the Urban Institute style
@@ -29,7 +45,7 @@ scale_color_discrete <- function(...) {
 #' @param ... other arguments passed to \code{discrete_scale()}
 #' @export
 scale_colour_discrete <- function(...) {
-  ggplot2::discrete_scale("colour", "urbn", urbn_color_pal("categorical"), ...)
+  ggplot2::discrete_scale("colour", "urbn", sarah_color_pal("categorical"), ...)
 }
 
 #' Discrete fill scale that aligns with the Urban Institute style
@@ -38,7 +54,7 @@ scale_colour_discrete <- function(...) {
 #' @param ... other arguments passed to \code{discrete_scale()}
 #' @export
 scale_fill_discrete <- function(...) {
-  ggplot2::discrete_scale("fill", "urbn", urbn_color_pal("categorical"), ...)
+  ggplot2::discrete_scale("fill", "urbn", sarah_color_pal("categorical"), ...)
 }
 
 #' Continuous fill scale that aligns with the Urban Institute style
@@ -53,8 +69,10 @@ scale_fill_discrete <- function(...) {
 #' @param ... other arguments passed to \code{discrete_scale()}
 #' @export
 scale_color_gradientn <- function(...,
-                                  colours = c("#CFE8F3","#A2D4EC","#73BFE2","#46ABDB", "#1696D2","#12719E","#0A4C6A","#062635"),
-                                  colors = c("#CFE8F3","#A2D4EC","#73BFE2","#46ABDB", "#1696D2","#12719E","#0A4C6A","#062635"),
+                                  colours = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+                                              "#7064bd", "#120947"),
+                                  colors = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+                                             "#7064bd", "#120947"),
                                   values = NULL,
                                   space = "Lab",
                                   na.value = "grey50",
@@ -91,8 +109,10 @@ scale_colour_gradientn <- scale_color_gradientn
 #' @param ... other arguments passed to \code{discrete_scale()}
 #' @export
 scale_fill_gradientn <- function(...,
-                                 colours = c("#CFE8F3","#A2D4EC","#73BFE2","#46ABDB", "#1696D2","#12719E","#0A4C6A","#062635"),
-                                 colors = c("#CFE8F3","#A2D4EC","#73BFE2","#46ABDB", "#1696D2","#12719E","#0A4C6A","#062635"),
+                                 colours = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+                                             "#7064bd", "#120947"),
+                                 colors = c("#a6a3b8", "#9893b8", "#8279ba", "#7064bd", "#5445b1", "#392999",
+                                            "#7064bd", "#120947"),
                                  values = NULL,
                                  space = "Lab",
                                  na.value = "grey50",

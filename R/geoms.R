@@ -89,9 +89,9 @@ geom_point <- function(mapping = NULL, size = 3, ...) {
   ggplot2::geom_point(mapping = mapping, size = size, ...)
 }
 
-#' geom_point in the Urban Institute style
+#' geom_text in the Urban Institute style
 #'
-#' Submit `?ggplot2::geom_point` to see the full documentation for `geom_point()`
+#' Submit `?ggplot2::geom_text` to see the full documentation for `geom_text()`
 #'
 #' @md
 #' @param mapping mapping from ggplot2

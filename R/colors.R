@@ -10,6 +10,26 @@
 #' @family urbn palettes
 #' @rdname urbn_palettes
 #' @export
+palette_sarah_main <- c(
+  kamala = "#5445b1",
+  amy = "#f3c483",
+  michelle = "#5c1a33",
+  jill = "#749dae",
+  gaga = "#cd3341",
+  amanda = "#f7dc6a")
+
+#' @rdname urbn_palettes
+#' @export
+palette_sarah_kamala <- c("#a6a3b8",
+                          "#9893b8",
+                          "#8279ba",
+                          "#7064bd",
+                          "#5445b1",
+                          "#392999",
+                          "#7064bd",
+                          "#120947")
+
+
 palette_urbn_main <- c(
   cyan = "#1696d2",
   yellow = "#fdbf11",

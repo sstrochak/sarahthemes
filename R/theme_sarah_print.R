@@ -10,7 +10,7 @@
 #' @param base_line_size,base_rect_size base line and rectangle sizes
 #' @export
 
-theme_urbn_print <- function(base_size = 8.5,
+theme_sarah_print <- function(base_size = 8.5,
                              base_family = "Lato",
                              base_line_size = 0.5,
                              base_rect_size = 0.5) {

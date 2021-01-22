@@ -1,6 +1,6 @@
 #' The Urban Institute [ggplot2] theme
 #'
-#' \code{set_urbn_defaults} provides a [ggplot2] theme formatted according to the
+#' \code{set_sarah_defaults} provides a [ggplot2] theme formatted according to the
 #' Urban Institute style guide, with sensible defaults.
 #'
 #' @param style The default theme style for the R session. "print" or "map".
@@ -14,7 +14,7 @@
 #' @import ggrepel
 #' @md
 #' @export
-set_urbn_defaults <- function(style = "print",
+set_sarah_defaults <- function(style = "print",
                               base_size = 8.5,
                               base_family = "Lato",
                               base_line_size = 0.5,
@@ -25,14 +25,14 @@ set_urbn_defaults <- function(style = "print",
 
   if (style == "print") {
 
-    ggplot2::theme_set(theme_urbn_print(base_size = base_size,
+    ggplot2::theme_set(theme_sarah_print(base_size = base_size,
                                         base_family = base_family,
                                         base_line_size = base_line_size,
                                         base_rect_size = base_rect_size))
 
   } else if (style == "map") {
 
-    ggplot2::theme_set(theme_urbn_map(base_size = base_size,
+    ggplot2::theme_set(theme_sarah_map(base_size = base_size,
                                       base_family = base_family,
                                       base_line_size = base_line_size,
                                       base_rect_size = base_rect_size,
